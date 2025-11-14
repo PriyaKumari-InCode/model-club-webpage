@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Club | BIT Sindri</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      color: #222;
+    }
+
+    header {
+      background-color: #0b3d91;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(11, 61, 145, 0.7), rgba(11, 61, 145, 0.7)), url('https://images.unsplash.com/photo-1554475901-4538ddfbccc2?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+
+    .hero a {
+      background-color: #ffcc00;
+      color: #0b3d91;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero a:hover {
+      background-color: #ffd633;
+    }
+
+    section {
+      padding: 60px 80px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #0b3d91;
+      margin-bottom: 40px;
+      font-size: 30px;
+      position: relative;
+    }
+
+    .about, .events, .achievements {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .event-card, .achievement-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .event-card:hover, .achievement-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .event-card h3, .achievement-card h3 {
+      color: #0b3d91;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 60px 30px;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #062b68;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+
+      section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Model Club BIT Sindri</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Welcome to Model Club, BIT Sindri</h2>
+    <p>Empowering innovation, creativity, and engineering excellence among students of BIT Sindri.</p>
+    <a href="#about">Learn More</a>
+  </div>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>
+        Model Club BIT Sindri is one of the oldest and most prestigious technical clubs of the institute.
+        The club focuses on fostering creativity, innovation, and practical engineering skills through
+        projects, workshops, and national-level competitions.
+      </p>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2 class="section-title">Our Events</h2>
+    <div class="events">
+      <div class="event-card">
+        <h3>Tech Udbhav</h3>
+        <p>A national-level tech fest showcasing students' innovative models and ideas.</p>
+      </div>
+      <div class="event-card">
+        <h3>Workshops</h3>
+        <p>Hands-on sessions on robotics, CAD, Arduino, and other emerging technologies.</p>
+      </div>
+      <div class="event-card">
+        <h3>Project Expo</h3>
+        <p>Display of real-world engineering solutions built by our club members.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements">
+      <div class="achievement-card">
+        <h3>Smart India Hackathon</h3>
+        <p>Winners of multiple national hackathons for innovative solutions.</p>
+      </div>
+      <div class="achievement-card">
+        <h3>Model Expo</h3>
+        <p>Recognized for creative engineering models at tech exhibitions.</p>
+      </div>
+      <div class="achievement-card">
+        <h3>Innovation Awards</h3>
+        <p>Multiple awards for design thinking and prototype development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 BIT Sindri, Dhanbad, Jharkhand</p>
+    <p>📧 modelclub@bitsindri.ac.in</p>
+    <p>📞 +91 98765 43210</p>
+  </section>
+
+  <footer>
+    © 2025 Model Club BIT Sindri | All Rights Reserved
+  </footer>
+
+</body>
+</htm
